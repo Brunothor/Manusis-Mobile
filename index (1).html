@@ -205,7 +205,7 @@ function fcaHelpHTML(tp){const T=FCA_TIPOS[tp];
   if(!T)return '<div class="help-box">Total e parcial indicam o comprometimento da função; intermitente indica o comportamento da falha no tempo.</div>';
   return `<div class="help-box" style="border-left-color:${T.cor}"><b>Conceito:</b> ${T.conceito}<br><b>Pergunta de apoio:</b> ${T.pergunta} <b>${T.sim}</b><br><b>Quando usar:</b><ul>${T.uso.map(x=>'<li>'+x+'</li>').join('')}</ul></div>`;}
 function fcaHelp(){const e=document.getElementById('fcaHelp');if(e)e.innerHTML=fcaHelpHTML(document.getElementById('fcaTipo').value);}
-const USER_DEMO={nome:'Rodrigo Rotondo',email:'r.rotondo@manusis4.com',empresa:'WERT SOLUTIONS DEMO'};
+const USER_DEMO={nome:'Bruno Capitani',email:'r.rotondo@manusis4.com',empresa:'CAPITANI};
 
 let DB=null,TIMER=null,TIMER_IV=null,SYNC_IV=null;
 function saveDB(){try{localStorage.setItem('mm_db',JSON.stringify(DB))}catch(e){}}
